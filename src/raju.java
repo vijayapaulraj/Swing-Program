@@ -6,13 +6,14 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JRadioButton;
+import javax.swing.JTextArea;
 import javax.swing.JTextField;
 
 
 public class raju {
 	JLabel lb1=null;
-	JTextField txt1=null;
-	JTextField txt=null;
+	JTextArea txt1=null;
+	JTextArea txt=null;
 	JPanel pn1=null;
 	
 	JLabel lb2=null;
@@ -74,9 +75,9 @@ public class raju {
 	public raju()
 	{
 		
-		lb1=new JLabel("Name");
-		txt1=new JTextField("First");
-		txt=new JTextField("last");
+		lb1=new JLabel("Name"+"\n");
+		txt1=new JTextArea("First"+"\n");
+		txt=new JTextArea("last");
 		txt1.setPreferredSize(new Dimension(200,20));
 		txt.setPreferredSize(new Dimension(200,20));
 		pn1=new JPanel();
@@ -85,9 +86,9 @@ public class raju {
 		pn1.add(txt);
 
 		
-		lb2=new JLabel("Choose your UserName");
-		txt2=new JTextField("\t"+"@gmail.com");
-		txt2.setPreferredSize(new Dimension(500,20));
+		lb2=new JLabel("Choose your UserName"+'\r'+'\n');
+		txt2=new JTextField("\t"+"\t"+"\t"+"\t"+"@gmail.com");
+		txt2.setPreferredSize(new Dimension(400,20));
 		pn2=new JPanel();
 		pn2.add(lb2);
 		pn2.add(txt2);
@@ -197,7 +198,7 @@ public class raju {
 		frm=new JFrame();
 		frm.add(mpnl);
 		frm.setTitle("Create your google Account");
-		frm.setSize(500,500);
+		frm.setSize(750,750);
 		frm.setVisible(true);
 			
 	}
