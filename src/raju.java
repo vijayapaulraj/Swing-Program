@@ -75,8 +75,8 @@ public class raju {
 	public raju()
 	{
 		
-		lb1=new JLabel("Name"+"\n");
-		txt1=new JTextArea("First"+"\n");
+		lb1=new JLabel("Name"+"\r\n");
+		txt1=new JTextArea("First"+"\r\n");
 		txt=new JTextArea("last");
 		txt1.setPreferredSize(new Dimension(200,20));
 		txt.setPreferredSize(new Dimension(200,20));
@@ -86,9 +86,9 @@ public class raju {
 		pn1.add(txt);
 
 		
-		lb2=new JLabel("Choose your UserName"+'\r'+'\n');
+		lb2=new JLabel("Choose your UserName"+"\r\n");
 		txt2=new JTextField("\t"+"\t"+"\t"+"\t"+"@gmail.com");
-		txt2.setPreferredSize(new Dimension(400,20));
+		txt2.setPreferredSize(new Dimension(500,20));
 		pn2=new JPanel();
 		pn2.add(lb2);
 		pn2.add(txt2);
