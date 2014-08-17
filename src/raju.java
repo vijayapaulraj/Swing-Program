@@ -106,9 +106,9 @@ public class raju {
 		pn4.add(txt4);
 		
 		lb5=new JLabel("BirthDay");
-		txt5=new JTextField();
-		txt6=new JTextField();
-		txt7=new JTextField();
+		txt5=new JTextField("Month");
+		txt6=new JTextField("Day");
+		txt7=new JTextField("Year");
 		txt5.setPreferredSize(new Dimension(100,20));
 		txt6.setPreferredSize(new Dimension(100,20));
 		txt7.setPreferredSize(new Dimension(100,20));
