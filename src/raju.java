@@ -66,8 +66,7 @@ public class raju {
 	
 	JButton btn5=null;
 	JButton btn6=null;
-	JPanel pn13=null;
-	
+		
 	JPanel mpnl=null;
 	JFrame frm=null;
 	
@@ -121,7 +120,7 @@ public class raju {
 		
 		
 		lb6=new JLabel("Gender");
-		txt8=new JTextField();
+		txt8=new JTextField("I am");
 		txt8.setPreferredSize(new Dimension(300,20));
 		btn1=new JRadioButton("Male");
 		btn2=new JRadioButton("Female");
