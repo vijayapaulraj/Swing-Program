@@ -66,6 +66,7 @@ public class raju {
 	
 	JButton btn5=null;
 	JButton btn6=null;
+	JPanel pn13=null;
 		
 	JPanel mpnl=null;
 	JFrame frm=null;
@@ -152,6 +153,13 @@ public class raju {
 		pn9.add(btn3);
 		pn9.add(lb10);
 		
+		lb13=new JLabel("Type the Text");
+		txt12=new JTextField();
+		txt12.setPreferredSize(new Dimension(100,20));
+		pn13=new JPanel();
+		pn13.add(lb13);
+		pn13.add(txt12);
+		
 		lb11=new JLabel("Location");
 		txt11=new JTextField();
 		txt11.setPreferredSize(new Dimension(300,20));
@@ -181,6 +189,7 @@ public class raju {
 		mpnl.add(pn7);
 		mpnl.add(pn8);
 		mpnl.add(pn9);
+		mpnl.add(pn13);
 		mpnl.add(pn10);
 		mpnl.add(pn11);
 		mpnl.add(pn12);
