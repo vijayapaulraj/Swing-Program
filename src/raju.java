@@ -109,9 +109,9 @@ public class raju {
 		txt5=new JTextField("Month");
 		txt6=new JTextField("Day");
 		txt7=new JTextField("Year");
-		txt5.setPreferredSize(new Dimension(100,20));
-		txt6.setPreferredSize(new Dimension(100,20));
-		txt7.setPreferredSize(new Dimension(100,20));
+		txt5.setPreferredSize(new Dimension(150,20));
+		txt6.setPreferredSize(new Dimension(150,20));
+		txt7.setPreferredSize(new Dimension(150,20));
 		pn5=new JPanel();
 		pn5.add(lb5);
 		pn5.add(txt5);
