@@ -1,5 +1,6 @@
 import java.awt.Dimension;
 
+import javax.swing.ButtonGroup;
 import javax.swing.JButton;
 import javax.swing.JCheckBox;
 import javax.swing.JFrame;
@@ -12,40 +13,41 @@ import javax.swing.JTextField;
 
 public class raju {
 	JLabel lb1=null;
-	JTextArea txt1=null;
-	JTextArea txt=null;
+	JTextField txt1=null;
+	JTextField txt2=null;
 	JPanel pn1=null;
 	
 	JLabel lb2=null;
-	JTextField txt2=null;
+	JTextField txt3=null;
 	JPanel pn2=null;
 	
 	JLabel lb3=null;
-	JTextField txt3=null;
+	JTextField txt4=null;
 	JPanel pn3=null;
 	
 	JLabel lb4=null;
-	JTextField txt4=null;
+	JTextField txt5=null;
 	JPanel pn4=null;
 	
 	JLabel lb5=null;
-	JTextField txt5=null;
 	JTextField txt6=null;
 	JTextField txt7=null;
+	JTextField txt8=null;
 	JPanel pn5=null;
 	
 	JLabel lb6=null;
-	JTextField txt8=null;
+	JTextField txt9=null;
 	JRadioButton btn1=null;
 	JRadioButton btn2=null;
+	ButtonGroup bt=null;
 	JPanel pn6=null;
 	
 	JLabel lb7=null;
-	JTextField txt9=null;
+	JTextField txt10=null;
 	JPanel pn7=null;
 	
 	JLabel lb8=null;
-	JTextField txt10=null;
+	JTextField txt11=null;
 	JPanel pn8=null;
 	
 	JLabel lb9=null;
@@ -54,11 +56,11 @@ public class raju {
 	JPanel pn9=null;
 	
 	JLabel lb11=null;
-	JTextField txt11=null;
+	JTextField txt12=null;
 	JPanel pn10=null;
 	
 	JLabel lb12=null;
-	JTextField txt12=null;
+	JTextField txt13=null;
 	JPanel pn11=null;
 	
 	JLabel lb13=null;
@@ -75,76 +77,78 @@ public class raju {
 	public raju()
 	{
 		
-		lb1=new JLabel("Name\n\r");
-		txt1=new JTextArea("First \n\r");
-		txt=new JTextArea("last");
+		lb1=new JLabel("Name");
+		txt1=new JTextField("First");
+		txt2=new JTextField("last");
 		txt1.setPreferredSize(new Dimension(200,20));
-		txt.setPreferredSize(new Dimension(200,20));
+		txt2.setPreferredSize(new Dimension(200,20));
 		pn1=new JPanel();
 		pn1.add(lb1);
 		pn1.add(txt1);
-		pn1.add(txt);
+		pn1.add(txt2);
 
 		
-		lb2=new JLabel("Choose your UserName \n\r");
-		txt2=new JTextField("\t"+"\t"+"\t"+"\t"+"@gmail.com");
-		txt2.setPreferredSize(new Dimension(500,20));
+		lb2=new JLabel("Choose your UserName");
+		txt3=new JTextField("\t"+"\t"+"\t"+"\t"+"@gmail.com");
+		txt3.setPreferredSize(new Dimension(500,20));
 		pn2=new JPanel();
 		pn2.add(lb2);
-		pn2.add(txt2);
+		pn2.add(txt3);
 		
 		lb3=new JLabel("Create a Password");
-		txt3=new JTextField("\r\n");
-		txt3.setPreferredSize(new Dimension(300,20));
-		pn3=new JPanel();
-		pn3.add(lb3);
-		pn3.add(txt3);
-		
-		lb4=new JLabel("Confirm Your Password");
 		txt4=new JTextField();
 		txt4.setPreferredSize(new Dimension(300,20));
+		pn3=new JPanel();
+		pn3.add(lb3);
+		pn3.add(txt4);
+		
+		lb4=new JLabel("Confirm Your Password");
+		txt5=new JTextField();
+		txt5.setPreferredSize(new Dimension(300,20));
 		pn4=new JPanel();
 		pn4.add(lb4);
-		pn4.add(txt4);
+		pn4.add(txt5);
 		
 		lb5=new JLabel("BirthDay");
-		txt5=new JTextField("Month");
-		txt6=new JTextField("Day");
-		txt7=new JTextField("Year");
-		txt5.setPreferredSize(new Dimension(150,20));
+		txt6=new JTextField("Month");
+		txt7=new JTextField("Day");
+		txt8=new JTextField("Year");
 		txt6.setPreferredSize(new Dimension(150,20));
 		txt7.setPreferredSize(new Dimension(150,20));
+		txt8.setPreferredSize(new Dimension(150,20));
 		pn5=new JPanel();
 		pn5.add(lb5);
-		pn5.add(txt5);
 		pn5.add(txt6);
 		pn5.add(txt7);
-		
-		
+		pn5.add(txt8);
+				
 		lb6=new JLabel("Gender");
-		txt8=new JTextField("I am");
-		txt8.setPreferredSize(new Dimension(300,20));
+		txt9=new JTextField("I am");
+		txt9.setPreferredSize(new Dimension(300,20));
 		btn1=new JRadioButton("Male");
 		btn2=new JRadioButton("Female");
 		pn6=new JPanel();
 		pn6.add(lb6);
-		pn6.add(txt8);
+		pn6.add(txt9);
+		bt=new ButtonGroup();
+		bt.add(btn1);
+		bt.add(btn2);
 		pn6.add(btn1);
 		pn6.add(btn2);
 		
 		lb7=new JLabel("Mobile Phone");
-		txt9=new JTextField();
-		txt9.setPreferredSize(new Dimension(300,20));
-		pn7=new JPanel();
-		pn7.add(lb7);
-		pn7.add(txt9);
-		
-		lb8=new JLabel("Your Current Email Address");
 		txt10=new JTextField();
 		txt10.setPreferredSize(new Dimension(300,20));
+		pn7=new JPanel();
+		pn7.add(lb7);
+		pn7.add(txt10);
+		
+		lb8=new JLabel("Your Current Email Address");
+		txt11=new JTextField();
+		txt11.setPreferredSize(new Dimension(300,20));
 		pn8=new JPanel();
 		pn8.add(lb8);
-		pn8.add(txt10);
+		pn8.add(txt11);
 		
 		lb9=new JLabel("Prove you're not a robot ");
 		btn3=new JCheckBox();
@@ -162,11 +166,11 @@ public class raju {
 		pn13.add(txt12);
 		
 		lb11=new JLabel("Location");
-		txt11=new JTextField();
-		txt11.setPreferredSize(new Dimension(300,20));
+		txt13=new JTextField();
+		txt13.setPreferredSize(new Dimension(300,20));
 		pn10=new JPanel();
 		pn10.add(lb11);
-		pn10.add(txt11);
+		pn10.add(txt13);
 		
 		btn4=new JCheckBox();
 		lb12=new JLabel("I agree to Google terms of service and policies");
